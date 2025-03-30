@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melhorador de Imagens</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Melhorador de Imagens</h1>
+        
+        <form id="uploadForm">
+    <label for="fileInput" class="file-label">
+        📤 Escolha uma imagem
+        <input type="file" id="fileInput" name="image" accept="image/*" required>
+    </label>
+    <button type="submit">Enviar</button>
+    <div id="loading" class="hidden">
+        <div class="spinner"></div>
+        <p>Processando imagem...</p>
+    </div>
+        </form>
+
+        <div class="image-preview">
+            <h2>Imagem Original</h2>
+            <img id="previewImage" src="" alt="Pré-visualização">
+        </div>
+
+        <div class="image-result">
+            <h2>Imagem Aprimorada</h2>
+            <img id="outputImage" src="/get-image" alt="Imagem aprimorada">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
